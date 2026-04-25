@@ -14,7 +14,7 @@ Edit the config block at the top of `dashboard.js` before deploying:
 const CONFIG = {
     hmi_url: "http://54.147.206.110",   // field server IP
     username: "operator",
-    password: "Winter2025!"
+    password: <password>
 }
 ```
 
