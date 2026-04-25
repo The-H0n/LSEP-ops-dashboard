@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSEP Ops Dashboard — Eagle Battery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>LSEP Ops Dashboard</h1>
+            <span class="site-label">Eagle Battery Production Site — LSEP-EB-001 | Midland Basin, TX</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:20px;">
+            <span id="status" style="font-size:13px; color:#666">● Connecting...</span>
+            <a class="hmi-link" href="http://54.147.206.110" target="_blank">Open HMI Panel</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="telemetry-grid">
+            <div class="card" id="tank1">
+                <h3>Tank 1</h3>
+                <div class="value">--</div>
+                <div class="unit">bbl</div>
+            </div>
+            <div class="card" id="tank2">
+                <h3>Tank 2</h3>
+                <div class="value">--</div>
+                <div class="unit">bbl</div>
+            </div>
+            <div class="card" id="pressure">
+                <h3>Separator Pressure</h3>
+                <div class="value">--</div>
+                <div class="unit">PSI</div>
+            </div>
+            <div class="card" id="temp">
+                <h3>Heater Temp</h3>
+                <div class="value">--</div>
+                <div class="unit">°F</div>
+            </div>
+            <div class="card" id="flow">
+                <h3>Flow Rate</h3>
+                <div class="value">--</div>
+                <div class="unit">bbl/hr</div>
+            </div>
+        </section>
+
+        <section class="alarms-panel">
+            <h2>Active Alarms</h2>
+            <div id="alarms-list">Connecting...</div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

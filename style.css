@@ -1,0 +1,105 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1c1c2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 30px;
+    background: #12122a;
+    border-bottom: 2px solid #c9a84c;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #c9a84c;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.site-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.hmi-link {
+    font-size: 13px;
+    color: #c9a84c;
+    text-decoration: none;
+    border: 1px solid #c9a84c;
+    padding: 6px 14px;
+    border-radius: 3px;
+}
+
+.hmi-link:hover { background: #c9a84c; color: #000; }
+
+main { padding: 30px; }
+
+.telemetry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #252540;
+    border: 1px solid #3a3a5c;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.card .value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #c9a84c;
+}
+
+.card .unit {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.telemetry-grid.stale .card .value { color: #555; }
+
+.alarms-panel {
+    background: #252540;
+    border: 1px solid #3a3a5c;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.alarms-panel h2 {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.alarm {
+    padding: 8px 12px;
+    background: #3a1a1a;
+    border-left: 4px solid #cc3300;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #ff8866;
+}
